@@ -58,13 +58,13 @@ Predictive analysis in this MVP is based on the following primary and supplement
 
    * **Cadence**: Daily total shares traded
    * **Description**: Captures investor activity; used as a feature.
-   * **Source**: Yahoo Finance (via `yfinance`) or directly from Nasdaq API.
+   * **Source**: Yahoo Finance (via `yfinance`) or directly from Nasdaq API `src/data_ingestion/finance.py`.
 
 5. **CBOE Volatility Index (VIX)**
 
    * **Cadence**: Daily closing values
    * **Description**: Market volatility gauge; extracted as daily changes.
-   * **Source**: CBOE or Yahoo Finance (`^VIX` ticker).
+   * **Source**: CBOE or Yahoo Finance (`^VIX` ticker). `src/data_ingestion/finance.py`.
 
 6. **Interaction Terms**
 
